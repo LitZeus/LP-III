@@ -32,8 +32,7 @@ def fractional_knapsack():
 
     print(f"Maximum value in the knapsack: {res:.2f}")
 
-if __name__ == "__main__":
-    fractional_knapsack()
+fractional_knapsack()
 
 # Test Case:
 # Number of items: 4
