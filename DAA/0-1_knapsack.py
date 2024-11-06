@@ -36,8 +36,7 @@ def solve_knapsack():
     max_value = knapsack(W, num_items)
     print(f"The maximum value that can be obtained is: {max_value}")
 
-if __name__ == "__main__":
-    solve_knapsack()
+solve_knapsack()
 
 
 
