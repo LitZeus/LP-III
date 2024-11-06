@@ -30,7 +30,7 @@ def fractional_knapsack():
             res += value
             capacity -= weight
 
-    print(f"Maximum value in the knapsack: {res:.2f}")
+    print(f"Maximum value in the knapsack: ", res)
 
 fractional_knapsack()
 
