@@ -27,14 +27,12 @@ def solve_n_queens(n):
 
     solutions = []
 
-    # Place the first queen at (0, 0)
-    first_queen_position = (0, 0)
-    queens = [first_queen_position]
-    place_queen(1, queens, solutions)  # Start placing from the next row
+    # Start with an empty list of queens and begin placing from the first row
+    place_queen(0, [], solutions)
 
     return solutions
 
-def print_solutions(solutions):
+def print_solutions(solutions, n):
     """
     Print each solution as a board:
     - Use 'Q' for queens and '.' for empty spaces.
@@ -49,4 +47,4 @@ def print_solutions(solutions):
 
 n = int(input("Enter the size of the N-Queens puzzle (n): "))  # Input size
 solutions = solve_n_queens(n)  # Solve the puzzle
-print_solutions(solutions)  # Print the solutions
+print_solutions(solutions, n)  # Print the solutions
