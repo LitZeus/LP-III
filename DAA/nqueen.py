@@ -47,7 +47,6 @@ def print_solutions(solutions):
             print(" ".join(row))  # Print the board
         print()  # Separate different solutions
 
-if __name__ == "__main__":
-    n = int(input("Enter the size of the N-Queens puzzle (n): "))  # Input size
-    solutions = solve_n_queens(n)  # Solve the puzzle
-    print_solutions(solutions)  # Print the solutions
+n = int(input("Enter the size of the N-Queens puzzle (n): "))  # Input size
+solutions = solve_n_queens(n)  # Solve the puzzle
+print_solutions(solutions)  # Print the solutions
